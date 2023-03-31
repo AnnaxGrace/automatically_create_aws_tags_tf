@@ -15,10 +15,10 @@ variable "name" {
   default     = "auto-tag-creation"
 }
 
-variable "app_tags" {
+variable "global_tags" {
   description = "Application specific tags."
   type        = map(any)
-  default     = { "pod" = "platform agility" }
+  default     = { "terraform_created" = true }
 }
 
 # variable "editor" {
