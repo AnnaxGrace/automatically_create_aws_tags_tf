@@ -21,5 +21,3 @@ locals {
   }
 }
 # create a service account for this
-
-#anna add tags to all

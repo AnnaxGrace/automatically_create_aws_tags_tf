@@ -36,9 +36,7 @@ resource "aws_iam_policy" "auto_tag_lambda" {
           "s3:GetBucketTagging"
         ],
         "Resource" : [
-          "arn:aws:s3:::*",
-          # "arn:aws:logs:us-east-1:${data.aws_caller_identity.current.account_id}:log-group:/aws/lambda/${var.name}",
-          # "arn:aws:logs:us-east-1:${data.aws_caller_identity.current.account_id}:log-group:/aws/lambda/${var.name}:log-stream:*"
+          "arn:aws:s3:::*"
         ]
       }
     ]
